@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+   "SercahInput":"../../components/Sercah/Sercah"
+  },
+  "navigationBarTitleText": "优购首页"
 }

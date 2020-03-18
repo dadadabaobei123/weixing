@@ -1,13 +1,26 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>
+<!-- 搜索框 -->
+<SercahInput></SercahInput>
+<!-- 轮播图 -->
+<view class="indexswipear">
+    <swiper autoplay circular="{{true}}" indicator-dots="{{true}}">
+        <swiper-item 
+        wx:for="{{swiperlist}}"
+        wx:key="goods_id"
+        >
+            <navigator>
+               <image mode="widthFix" src="{{item.image_src}}"></image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+</view>
+<!-- 导航 -->
+<view class="daohang">
+    <navigator
+    wx:for="{{daohanglist}}"
+    wx:key="name"
+    >
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+    </navigator>
+</view>
 </view>

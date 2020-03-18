@@ -1,21 +1,21 @@
-/**index.wxss**/
-.userinfo {
+view {
+  /* 使用主题颜色 */
+  color: var(--themeColor);
+}
+.indexswipear swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.indexswipear swiper image {
+  width: 100%;
+}
+.daohang {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.daohang navigator {
+  padding: 20rpx;
+  flex: 1;
 }
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+.daohang navigator image {
+  width: 100%;
 }
