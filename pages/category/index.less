@@ -1,0 +1,20 @@
+/* pages/category/index.wxss */
+page{
+    height:100%;
+}
+.cates{
+    height:100%;
+    .cates_container{
+           /* less中使用calc的时候要注意 */
+    height: ~'calc( 100vh - 90rpx )';
+    display:flex;
+    .left_menu{
+        flex:2;
+       
+    }
+    .right_menu{
+        flex:5;
+        background-color:blue;
+    }
+    }
+}
