@@ -15,15 +15,6 @@
           <view>9</view>
           <view>10</view>
           <view>11</view>
-          <view>12</view>
-          <view>13</view>
-          <view>14</view>
-          <view>15</view>
-          <view>16</view>
-          <view>17</view>
-          <view>18</view>
-          <view>19</view>
-          <view>20</view>
         </scroll-view>
         <!-- 右侧菜单 -->
         <scroll-view scroll-y="{{true}}" class="right_menu">
